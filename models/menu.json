@@ -1,0 +1,28 @@
+{
+    "menu": [
+        {
+            "name": "Filet Mignon",
+            "description": "A very tender meat infused with garlic, rosemary, and topped with butter to enhance its flavour.",
+            "price": "€34.99",
+            "rating": 5
+        },
+        {
+            "name": "Filet Mignon",
+            "description": "A very tender meat infused with garlic, rosemary, and topped with butter to enhance its flavour.",
+            "price": "€34.99",
+            "rating": 5
+        },
+        {
+            "name": "Filet Mignon",
+            "description": "A very tender meat infused with garlic, rosemary, and topped with butter to enhance its flavour.",
+            "price": "€34.99",
+            "rating": 5
+        },
+        {
+            "name": "Filet Mignon",
+            "description": "A very tender meat infused with garlic, rosemary, and topped with butter to enhance its flavour.",
+            "price": "€34.99",
+            "rating": 5
+        }
+    ]
+}
