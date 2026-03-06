@@ -2,7 +2,8 @@
     "gallery": [
         {
             "altText": "Inside of the restaurant",
-            "imagePath": ""
+            "imagePath": "/images/restaurant.jpg",
+            "source": "https://media.istockphoto.com/id/111861571/photo/atmosphere-restaurant-asian-fusion.jpg?s=612x612&w=0&k=20&c=Jx-YV6jHeKUu2NuMKE9KZHwEI0emGAH0MLJuSHmD4qA="
         },
         {
             "altText": "Inside of the restaurant",

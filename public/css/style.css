@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  background-color: lightgrey;
+}
+
+/* header */
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+nav header{
+  height: 45%;
+}
+
+nav .menu{
+  height: 55%;
+}
+
+nav .menu .item{
+  border: 1px solid red;
+}

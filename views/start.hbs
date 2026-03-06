@@ -2,14 +2,36 @@
 
 <section class="ui center aligned middle aligned segment">
   
-  <h2>Restaurant de Ford</h2>
+  <div class="main-header">
+    <h2>Restaurant de Ford</h2>
+    <p>5 star restaurant in the heart of the city</p>
+  </div>
 
-  <p>
-    5 star restaurant in the heart of the city
-  </p>
-  {{!-- image source: https://media.istockphoto.com/id/111861571/photo/atmosphere-restaurant-asian-fusion.jpg?s=612x612&w=0&k=20&c=Jx-YV6jHeKUu2NuMKE9KZHwEI0emGAH0MLJuSHmD4qA= --}}
-  <img src="/images/restaurant.jpg" alt="Inside of Restaurant de Ford">
   <hr>
   <p>⭐⭐⭐⭐⭐</p>
+  <hr>
+
+  <div class="sub-header">
+      <h2>Book a reservation</h2>
+
+      <p>Before booking, make sure to familiarise yourself with our menu and to arrive at least 15 minutes in advance of your booking time chosen.</p>
+  </div>
+
+  <div class="booking-container">
+    <h3 class="title">Choose a date and time</h3>
+    <div class="inputs">
+      <div class="inputs-column">
+        <input type="date">
+        <div id="time">
+          <label for="time">Enter a time:</label>
+          <input type="time" name="time">
+        </div>
+      </div>
+      <div class="inputs-column">
+        <button>Prebook with Menu</button>
+        <button>Book only time</button>
+      </div>
+    </div>
+  </div>
 
 </section>
