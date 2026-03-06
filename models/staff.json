@@ -1,9 +1,24 @@
 {
     "staff": [
         {
-            "name": "",
-            "occupation": "",
-            "dateJoined": ""
+            "name": "Joe",
+            "occupation": "Website Developer",
+            "dateJoined": "2022"
+        },
+        {
+            "name": "Joe",
+            "occupation": "Website Developer",
+            "dateJoined": "2022"
+        },
+        {
+            "name": "Joe",
+            "occupation": "Website Developer",
+            "dateJoined": "2022"
+        },
+        {
+            "name": "Joe",
+            "occupation": "Website Developer",
+            "dateJoined": "2022"
         }
     ]
 }

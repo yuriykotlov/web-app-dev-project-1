@@ -1,0 +1,4 @@
+{
+  "ext": "js,hbs,css",
+  "watch": ["views", "controllers", "routes.js", "public/style.css"]
+}

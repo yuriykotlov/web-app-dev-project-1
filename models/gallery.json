@@ -1,0 +1,32 @@
+{
+    "gallery": [
+        {
+            "altText": "Inside of the restaurant",
+            "imagePath": ""
+        },
+        {
+            "altText": "Inside of the restaurant",
+            "imagePath": ""
+        },
+        {
+            "altText": "Sample of food",
+            "imagePath": ""
+        },
+        {
+            "altText": "Outside of the restaurant",
+            "imagePath": ""
+        },
+        {
+            "altText": "Sample of food",
+            "imagePath": ""
+        },
+        {
+            "altText": "Inside the kitchen",
+            "imagePath": ""
+        },
+        {
+            "altText": "Staff members of the restaurant",
+            "imagePath": ""
+        }
+    ]
+}

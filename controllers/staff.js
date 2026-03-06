@@ -8,7 +8,7 @@ const menu = {
     logger.info("Start page loading!");
     
     const viewData = {
-      title: "Restaurant de Ford | Menu",
+      title: "Restaurant de Ford | Staff",
       info: staff.getAppInfo()
     };
     

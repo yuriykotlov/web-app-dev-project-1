@@ -11,10 +11,12 @@ import start from './controllers/start.js';
 import menu from "./controllers/menu.js";
 import staff from "./controllers/staff.js";
 import locations from "./controllers/locations.js";
+import gallery from "./controllers/gallery.js";
 
 router.get('/', start.createView);
 router.get('/menu', menu.createView);
 router.get('/staff', staff.createView);
 router.get('/locations', locations.createView);
+router.get('/gallery', gallery.createView);
 
 export default router;
