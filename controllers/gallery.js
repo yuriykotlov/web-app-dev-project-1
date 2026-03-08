@@ -7,6 +7,7 @@ const gallery = {
   createView(request, response) {
     logger.info("Start page loading!");
     
+    // get all gallery pictures
     const viewData = {
       title: "Restaurant de Ford | Gallery",
       info: galleryPictures.getAppInfo()

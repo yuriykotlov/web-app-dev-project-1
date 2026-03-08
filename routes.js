@@ -12,11 +12,13 @@ import menu from "./controllers/menu.js";
 import course from "./controllers/course.js";
 import staff from "./controllers/staff.js";
 import gallery from "./controllers/gallery.js";
+import thanks from "./controllers/thanks.js";
 
 router.get('/', start.createView);
 router.get('/menu', menu.createView);
 router.get('/course/:id', course.createView);
 router.get('/staff', staff.createView);
 router.get('/gallery', gallery.createView);
+router.get('/thanks', thanks.createView);
 
 export default router;

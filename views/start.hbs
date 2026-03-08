@@ -1,3 +1,4 @@
+{{main}}
 {{> header id="start"}}
 
 <head>
@@ -10,6 +11,8 @@
     <h1>Restaurant de Ford</h1>
     <p>5 star restaurant in the heart of the city</p>
   </div>
+  
+  <img src="images/gallery/restaurant.jpg" alt="Restaurant de Ford">
 
   <hr>
   <p class="stars">⭐⭐⭐⭐⭐</p>
@@ -25,15 +28,14 @@
     <h3 class="title">Choose a date and time</h3>
     <div class="inputs">
       <div class="inputs-column">
-        <input type="date">
+        <input id="input-date" type="date">
         <div id="time">
           <label for="time">Enter a time:</label>
-          <input type="time" name="time">
+          <input id="input-time" type="time" name="time">
         </div>
       </div>
       <div class="inputs-column">
-        <button>Prebook with Menu</button>
-        <button>Book only time</button>
+        <button id="book" onclick="book(this)">Book time chosen</button>
       </div>
     </div>
   </div>

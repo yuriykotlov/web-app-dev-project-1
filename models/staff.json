@@ -5,28 +5,28 @@
             "occupation": "Founder",
             "dateJoined": "2014",
             "picturePath": "images/staff/person.png",
-            "source": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
+            "pictureSource": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
         },
         {
             "name": "Cheryl",
             "occupation": "Co-founder",
             "dateJoined": "2014",
             "picturePath": "images/staff/person.png",
-            "source": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
+            "pictureSource": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
         },
         {
             "name": "Joe",
             "occupation": "Website Developer",
             "dateJoined": "2022",
             "picturePath": "images/staff/person.png",
-            "source": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
+            "pictureSource": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
         },
         {
             "name": "Thomas",
             "occupation": "Website Developer",
             "dateJoined": "2024",
             "picturePath": "images/staff/person.png",
-            "source": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
+            "pictureSource": "https://www.freeiconspng.com/img/1682 accessed 08/03/2026 19:15pm"
         }
     ]
 }

@@ -7,8 +7,9 @@ const info = {
   createView(request, response) {
     logger.info("Start page loading!");
     
+    // get staff and their names, pictures, and other info
     const viewData = {
-      title: "Restaurant de Ford | Staff",
+      title: "Restaurant de Ford | About us",
       staffMembers: staff.getAppInfo()
     };
     
