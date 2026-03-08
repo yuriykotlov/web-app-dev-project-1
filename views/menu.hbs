@@ -1,21 +1,19 @@
 {{> header id="menu"}}
 
+<head>
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+
 <section class="ui center aligned middle aligned segment">
   
-  <h2>Menu</h2>
-
-  <div class="menu-items-container ui center three column grid">
-    {{#each info}}
-      <div class="column">
-        <div class="column-padding">
-          <h3>{{name}}</h3>
-          <p>{{description}}</p>
-          <div class="item-footer">
-            <p><b>{{price}}</b></p>
-            <p><b>⭐{{rating}}</b></p>
-          </div>
-        </div>
-      </div>
-    {{/each}}
-  </div>
+  <h1>Menu</h1>
+  {{#each course}}
+    <div class="menu-items-container ui center aligned segment">
+      <h2>{{name}}</h2>
+      {{#if meals}}
+        <p>Number of meals: {{meals.length}}</p>
+        <a href="/course/{{id}}">See meals</a>
+      {{/if}}
+    </div>
+  {{/each}}
 </section>

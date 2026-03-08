@@ -6,9 +6,13 @@ import JsonStore from './json-store.js';
 const menu = {
   mainMenu: new JsonStore('./models/menu.json', { menu: [] }),
   collection: 'menu',
+  array: 'meals',
 
   getAppInfo() {
     return this.mainMenu.findAll(this.collection);
+  },
+  getCourse(id) {
+    return this.mainMenu.findOneBy(this.collection, (course => course.id === id));
   },
 };
 

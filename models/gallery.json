@@ -2,32 +2,28 @@
     "gallery": [
         {
             "altText": "Inside of the restaurant",
-            "imagePath": "/images/restaurant.jpg",
-            "source": "https://media.istockphoto.com/id/111861571/photo/atmosphere-restaurant-asian-fusion.jpg?s=612x612&w=0&k=20&c=Jx-YV6jHeKUu2NuMKE9KZHwEI0emGAH0MLJuSHmD4qA="
-        },
-        {
-            "altText": "Inside of the restaurant",
-            "imagePath": ""
+            "imagePath": "images/gallery/restaurant.jpg",
+            "source": "https://www.istockphoto.com/photo/atmosphere-restaurant-asian-fusion-gm111861571-7458318?searchscope=image%2Cfilm accessed 8/03/2026 18:40pm"
         },
         {
             "altText": "Sample of food",
-            "imagePath": ""
+            "imagePath": "images/gallery/food-sample.avif",
+            "source": "https://www.freepik.com/premium-photo/dining-table-with-tasty-food-restaurant_11840932.htm accessed 8/03/2026 18:40pm"
         },
         {
             "altText": "Outside of the restaurant",
-            "imagePath": ""
-        },
-        {
-            "altText": "Sample of food",
-            "imagePath": ""
+            "imagePath": "images/gallery/restaurant-outside.jpeg",
+            "source": "https://www.pexels.com/photo/street-corner-restaurant-17191468/ accessed 8/03/2026 18:40pm"
         },
         {
             "altText": "Inside the kitchen",
-            "imagePath": ""
+            "imagePath": "images/gallery/kitchen.jpg",
+            "source": "https://housing.com/news/restaurant-kitchen-design-ideas-worthy-of-your-kitchen/ accessed 8/03/2026 18:40pm"
         },
         {
-            "altText": "Staff members of the restaurant",
-            "imagePath": ""
+            "altText": "Staff inside of the kitchen",
+            "imagePath": "images/gallery/staff.webp",
+            "source": "https://tableo.com/human-resources/9-steps-improving-restaurant-staff-performance/ accessed 8/03/2026 18:40pm"
         }
     ]
 }

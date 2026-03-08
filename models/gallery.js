@@ -4,7 +4,7 @@ import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
 
 const gallery = {
-  restaurantGallery: new JsonStore('./models/staff.json', { gallery: [] }),
+  restaurantGallery: new JsonStore('./models/gallery.json', { gallery: [] }),
   collection: 'gallery',
 
   getAppInfo() {

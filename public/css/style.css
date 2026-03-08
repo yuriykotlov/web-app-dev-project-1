@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  background-color: lightgrey;
+  background-color: rgb(125, 0, 0);
 }
 
 /* header */
@@ -28,9 +28,23 @@ nav header{
   text-align: center;
 }
 nav header a{
-  font-size: 25px;
+  font-size: 45px;
+  font-style: italic;
+  color: #fff;
 }
 
 .buttons-container a{
+  background-color: wheat !important;
   font-style: italic;
+  font-weight: bold !important;
+  font-size: 19px !important;
+}
+
+h1{
+  margin-bottom: 50px;
+}
+
+section > section{
+  background-color: wheat !important;
+  border-radius: 15px !important;
 }

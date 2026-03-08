@@ -1,9 +1,21 @@
 {{> header id="gallery"}}
 
+<head>
+    <link rel="stylesheet" href="/css/gallery.css">
+</head>
+
 <section class="ui center aligned middle aligned segment">
   
-  <h2>Gallery</h2>
+  <h1>Gallery</h1>
 
-
+  <div class="menu-items-container ui center two column grid">
+    {{#each info}}
+      <div class="column">
+        <div class="column-padding">
+          <img src="{{imagePath}}" alt="{{altText}}">
+        </div>
+    </div>
+    {{/each}}
+  </div>
 
 </section>

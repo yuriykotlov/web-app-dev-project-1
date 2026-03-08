@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/course-meals.css">
+</head>
+
+<h1>{{thisCourse.name}}</h1>
+
+<div class="menu-items-container ui center three column grid">
+    {{#each thisCourse.meals}}
+      <div class="column">
+        <div class="column-padding">
+          <h3>{{name}}</h3>
+          <p>{{description}}</p>
+          <div class="item-footer">
+            <p><b>{{price}}</b></p>
+            <p><b>⭐{{rating}}</b></p>
+          </div>
+          <button id="choose">Choose</button>
+        </div>
+      </div>
+    {{/each}}
+</div>
+
+<button id="back">Finish</button>

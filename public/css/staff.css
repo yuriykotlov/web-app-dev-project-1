@@ -1,0 +1,28 @@
+.column{
+    padding: 5px !important;
+}
+.column-padding{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(125, 0, 0);
+    border-radius: 10px;
+    height: 350px;
+}
+img{
+    height: 180px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+.header > h2, .header > h4{
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #fff;
+}
+.footer p{
+    font-style: italic;
+    font-size: 21px;
+    color: #fff;
+}

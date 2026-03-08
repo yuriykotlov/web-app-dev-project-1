@@ -9,7 +9,7 @@ const menu = {
     
     const viewData = {
       title: "Restaurant de Ford | Menu",
-      info: mainMenu.getAppInfo()
+      course: mainMenu.getAppInfo()
     };
     
     response.render('menu', viewData);   

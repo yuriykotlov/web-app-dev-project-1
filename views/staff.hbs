@@ -1,10 +1,28 @@
 {{> header id="staff"}}
 
+<head>
+    <link rel="stylesheet" href="/css/staff.css">
+</head>
+
 <section class="ui center aligned middle aligned segment">
   
-  <h2>Staff</h2>
+  <h1>Staff</h1>
 
-  <div class="menu-items-container">
+  <div class="menu-items-container ui center four column grid">
+    {{#each staffMembers}}
+      <div class="column">
+        <div class="column-padding">
+          <div class="header">
+            <h2>{{name}}</h2>
+            <h4>{{occupation}}</h4>
+          </div>
+          <img src="{{picturePath}}" alt="A photo of {{name}}">
+          <div class="footer">
+            <p>Joined in {{dateJoined}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
   </div>
 
 </section>
