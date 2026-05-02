@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="/css/menu.css">
 </head>
 
-<section class="ui center aligned middle aligned segment">
+<section id="menu-container" class="ui center aligned middle aligned segment">
   
   <h1>Our Menu</h1>
   {{#each course}}
@@ -12,8 +12,12 @@
       <h2>{{name}}</h2>
       {{#if meals}}
         <p>Number of meals: {{meals.length}}</p>
-        <a href="/course/{{id}}"><i class="icon hamburger"></i> See meals</a>
+      {{else}}
+        <p>No meals in this course yet!</p>
       {{/if}}
+      <a href="/course/{{id}}"><i class="icon hamburger"></i> See meals</a>
     </div>
   {{/each}}
 </section>
+
+{{> addcourse}}

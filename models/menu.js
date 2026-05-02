@@ -14,6 +14,9 @@ const menu = {
   getCourse(id) {
     return this.mainMenu.findOneBy(this.collection, (course => course.id === id));
   },
+  addMeal(id, meal) {
+    this.mainMenu.addItem(this.collection, id, this.array, meal);
+  },
 };
 
 export default menu;

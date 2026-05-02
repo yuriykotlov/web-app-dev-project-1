@@ -1,4 +1,15 @@
-<section class="ui center aligned middle aligned scrolling segment">
-  <h1 class="ui header">{{course.name}}</h1>
+{{!--
+  parent of this hbs is menu and it provides the course keyword,
+  so thats where {{name}} comes from
+--}}
+
+<head>
+    <link rel="stylesheet" href="/css/course-meals.css">
+</head>
+
+<section id="course-container" class="ui center aligned middle aligned segment">
+  <h1 class="ui header">{{name}}</h1>
   {{> course-meals}}
 </section>
+
+{{> addmeal}}

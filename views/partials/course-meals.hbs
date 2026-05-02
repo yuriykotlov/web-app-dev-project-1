@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="/css/course-meals.css">
 </head>
 
-<h1>{{thisCourse.name}}</h1>
+{{#with thisCourse}}
+
+<h1>{{name}}</h1>
 
 <div class="menu-items-container ui center three column grid">
-    {{#each thisCourse.meals}}
+    {{#each meals}}
       <div class="column">
         <div class="column-padding">
           <h3>{{name}}</h3>
@@ -21,5 +23,7 @@
       </div>
     {{/each}}
 </div>
+
+{{/with}}
 
 <a href="/menu" id="back"><p>Back</p></a>
