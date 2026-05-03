@@ -109,3 +109,11 @@ section > section, .welcome-menu, .log-in, .sign-up{
   color: #fff;
   border-radius: 7px;
 }
+
+.statistics-container{
+  padding-bottom: 100px !important;
+}
+
+.statistics-title{
+    margin-bottom: 75px;
+}

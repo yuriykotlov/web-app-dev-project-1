@@ -20,13 +20,31 @@ const menu = {
     return this.mainMenu.findBy(this.collection, (course => course.userid === userid));
   },
 
-  addCourse(course){
-    this.mainMenu.addCollection(this.collection, course);
+  async addCourse(course, file, response){
+    try {
+      course.picture = await this.mainMenu.addToCloudinary(file);
+      this.mainMenu.addCollection(this.collection, course);
+      response();
+    } catch (error) {
+      logger.error("Error processing course:", error);
+      response(error);
+    }
   },
 
-  deleteCourse(courseId){
+  async deleteCourse(courseId, response){
     const course = this.getCourse(courseId);
+
+    if (course.picture && course.picture.public_id) {
+      try {
+        await this.mainMenu.deleteFromCloudinary(course.picture.public_id);
+        logger.info("Cloudinary image deleted");
+      } catch (error) {
+        logger.error("Failed to delete Cloudinary image:", error);
+      }
+    }
+
     this.mainMenu.removeCollection(this.collection, course)
+    response();
   },
 
   editCourse(courseId, updatedCourse){

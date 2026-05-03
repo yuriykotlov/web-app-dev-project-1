@@ -47,7 +47,7 @@
     position: relative;
     transform: translateX(50%);
     background-color: rgb(125, 0, 0) !important;
-    border: none;
+    border: none !important;
     box-shadow: none;
     width: 50%;
     margin: 25px 0px;
@@ -55,7 +55,16 @@
     text-decoration: none;
 }
 
-.menu-items-container a{
+.menu-course-container{
+    background-color: rgb(125, 0, 0) !important;
+    color: #fff;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 10px !important;
+    padding: 0px !important;
+}
+
+.menu-items-container a, .menu-course-container a{
     color: #fff;
 }
 
@@ -119,12 +128,11 @@
 
 #add-course form button{
     font-size: 21px;
-    width: 45%;
+    width: 30%;
 }
 
-
-#add-course form div{
-    width: 45%;
+#add-course .field{
+    width: 30%;
 }
 
 #filter{
@@ -145,4 +153,11 @@
 
 .hide{
   display: none !important;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
 }

@@ -51,24 +51,28 @@ const menu = {
   },
 
   addCourse(request, response){
+    const loggedInUser = accounts.getCurrentUser(request);
     const courseId = request.params.id;
+    
     const newCourse = {
       id: uuidv4(),
       userid: loggedInUser.id,
       name: request.body.name,
       meals: []
     };
-    mainMenu.addCourse(newCourse);
     
-    response.redirect('/menu');
+    mainMenu.addCourse(newCourse, request.files.picture, function(){
+      response.redirect('/menu');
+    });
   },
 
   deleteCourse(request, response){
     const courseId = request.params.id;
     logger.debug(`Deleting Course ${courseId}`);
-    mainMenu.deleteCourse(courseId)
-    
-    response.redirect('/menu');
+
+    mainMenu.deleteCourse(courseId, function() {
+      response.redirect('/menu');
+    });
   },
 
   updateCourse(request, response){

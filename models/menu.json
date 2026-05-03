@@ -19,7 +19,11 @@
           "price": "16.50",
           "rating": 4.75
         }
-      ]
+      ],
+      "picture": {
+        "url": "https://res.cloudinary.com/dz3iidl5y/image/upload/v1777727535/chill_dog_vostyo.png",
+        "public_id": "chill_dog_vostyo"
+      }
     },
     {
       "id": "2",
@@ -40,7 +44,11 @@
           "price": "22.00",
           "rating": 5
         }
-      ]
+      ],
+      "picture": {
+        "url": "https://res.cloudinary.com/dz3iidl5y/image/upload/v1777727535/chill_dog_vostyo.png",
+        "public_id": "chill_dog_vostyo"
+      }
     },
     {
       "id": "3",
@@ -54,13 +62,29 @@
           "price": "5.25",
           "rating": 4.5
         }
-      ]
+      ],
+      "picture": {
+        "url": "https://res.cloudinary.com/dz3iidl5y/image/upload/v1777727535/chill_dog_vostyo.png",
+        "public_id": "chill_dog_vostyo"
+      }
     },
     {
-      "id": "a571c504-74ee-40b2-a1c4-7bfd27d7d21e",
-      "userid": "test_id1",
-      "name": "a",
-      "meals": []
+      "id": "6e255b4a-bdd8-4d2e-8fa9-08417247ad04",
+      "userid": "test_id2",
+      "name": "hi",
+      "meals": [
+        {
+          "id": "27f3698e-ce16-439a-bb02-318be157e79d",
+          "name": "meal 1",
+          "description": "good meal",
+          "price": 7.95,
+          "rating": 5
+        }
+      ],
+      "picture": {
+        "url": "http://res.cloudinary.com/dz3iidl5y/image/upload/v1777839144/zlhxxoiuszpvtthiblod.png",
+        "public_id": "zlhxxoiuszpvtthiblod"
+      }
     }
   ]
 }

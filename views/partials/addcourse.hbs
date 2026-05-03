@@ -1,9 +1,13 @@
 <div id="add-course">
     <h2><i>Add a Course</i></h2>
-    <form class="ui stacked segment form" action="/menu/addcourse" method="POST">
+    <form class="ui stacked segment form" action="/menu/addcourse" method="POST" enctype="multipart/form-data">
         <div class="field">
             <label>Name</label>
             <input type="text" name="name" autofocus required title="Enter a name for this course">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input placeholder="Image" type="file" name="picture" required>
         </div>
         <button class="ui blue submit button">Add Course</button>
     </form>
