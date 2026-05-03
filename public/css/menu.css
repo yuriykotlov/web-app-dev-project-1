@@ -107,3 +107,19 @@
     bottom: 11%;
     width: fit-content;
 }
+
+#filter{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#filter .field{
+    padding: 0px;
+    margin: 0px;
+}

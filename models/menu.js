@@ -16,7 +16,11 @@ const menu = {
     return this.mainMenu.findOneBy(this.collection, (course => course.id === id));
   },
 
-  addCourse(course) {
+  getUserCourses(userid){
+    return this.mainMenu.findBy(this.collection, (course => course.userid === userid));
+  },
+
+  addCourse(course){
     this.mainMenu.addCollection(this.collection, course);
   },
 
@@ -25,7 +29,14 @@ const menu = {
     this.mainMenu.removeCollection(this.collection, course)
   },
 
-  addMeal(id, meal) {
+  searchForCourse(search){
+    return this.mainMenu.findBy(
+      this.collection,
+      (course => course.name.toLowerCase().includes(search.toLowerCase()))
+    )
+  },
+
+  addMeal(id, meal){
     this.mainMenu.addItem(this.collection, id, this.array, meal);
   },
 

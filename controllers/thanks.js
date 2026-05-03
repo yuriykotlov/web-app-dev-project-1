@@ -4,7 +4,7 @@ import logger from "../utils/logger.js";
 
 const bookingComplete = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    logger.info("Thanks page loading!");
     
     // no info needed for thanks page, only its title and to render it
     const viewData = {

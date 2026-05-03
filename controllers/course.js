@@ -6,6 +6,8 @@ import { parse, v4 as uuidv4 } from 'uuid';
 
 const course = {
   createView(request, response) {
+    logger.info("Course page loading!");
+
     // course meal id to get
     const courseId = request.params.id;
     

@@ -5,7 +5,7 @@ import staff from "../models/staff.js";
 
 const info = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    logger.info("Staff page loading!");
     
     // get staff and their names, pictures, and other info
     const viewData = {

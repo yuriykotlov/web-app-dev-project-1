@@ -6,12 +6,38 @@ import { v4 as uuidv4 } from 'uuid';
 
 const menu = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    logger.info("Menu page loading!");
+
+    const searchTerm = request.query.searchTerm || "";
+
+    const courses = searchTerm ? mainMenu.searchForCourse(searchTerm) : mainMenu.getAppInfo();
+
+    const sortField = request.query.sort;
+    const order = request.query.order === "desc" ? -1 : 1;
+
+    let sorted = courses;
+
+    if (sortField){
+      sorted = courses.slice().sort((a, b) => {
+        if (sortField === "name") {
+          return a.name.localeCompare(b.title) * order;
+        }
+        if (sortField === "name") {
+            return (a.meals.length - b.meals.length) * order;
+        }
+        return 0;
+      });
+    }
     
     // get all main menu info
     const viewData = {
       title: "Restaurant de Ford | Menu",
-      course: mainMenu.getAppInfo()
+      course: sortField ? sorted : courses,
+      search: searchTerm,
+      nameSelected: request.query.sort === "name",
+      numberOfMeals: request.query.sort === "numberOfMeals",
+      ascSelected: request.query.order === "asc",
+      descSelected: request.query.order === "desc",
     };
 
     response.render('menu', viewData);   

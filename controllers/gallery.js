@@ -5,7 +5,7 @@ import galleryPictures from "../models/gallery.js";
 
 const gallery = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    logger.info("Gallery page loading!");
     
     // get all gallery pictures
     const viewData = {
