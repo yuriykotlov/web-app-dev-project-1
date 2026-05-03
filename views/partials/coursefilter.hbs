@@ -1,0 +1,20 @@
+<form id="filter" action="/searchCategory" method="GET" class="ui form">
+    <div class="field">
+        <label>Filter by name:</label>
+        <input id="name" type="text" name="searchTerm" placeholder="Search by name..." value="{{search}}">
+    </div>
+    <div class="field">
+        <label>Sort by:</label>
+        <select class="ui dropdown" name="sort" onchange="this.form.submit()">
+            <option value="name" {{#if nameSelected}}selected{{/if}}>Name</option>
+            <option value="numberOfMeals" {{#if numberOfMeals}}selected{{/if}}>No. Meals</option>
+        </select>
+    </div>
+    <div class="field">
+        <label>Order:</label>
+        <select class="ui dropdown" name="order" onchange="this.form.submit()">
+            <option value="asc" {{#if ascSelected}}selected{{/if}}>↑</option>
+            <option value="desc" {{#if descSelected}}selected{{/if}}>↓</option>
+        </select>
+    </div>
+</form>

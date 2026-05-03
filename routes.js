@@ -28,6 +28,7 @@ router.post('/menu/addcourse', menu.addCourse);
 router.get('/menu/deletecourse/:id', menu.deleteCourse);
 router.post('/course/:id/addmeal', course.addMeal);
 router.get('/course/:id/deletemeal/:mealid', course.deleteMeal);
+router.post('/course/:id/updatemeal/:mealid', course.updateMeal);
 
 router.get('/searchCategory', menu.createView);
 router.get('/sortData', menu.createView);

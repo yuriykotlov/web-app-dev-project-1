@@ -36,12 +36,16 @@ const menu = {
     )
   },
 
-  addMeal(id, meal){
-    this.mainMenu.addItem(this.collection, id, this.array, meal);
+  addMeal(courseId, meal){
+    this.mainMenu.addItem(this.collection, courseId, this.array, meal);
   },
 
   deleteMeal(courseId, mealId){
     this.mainMenu.removeItem(this.collection, courseId, this.array, mealId)
+  },
+
+  editMeal(courseId, mealId, updatedMeal){
+    this.mainMenu.editItem(this.collection, courseId, mealId, this.array, updatedMeal);
   }
 };
 

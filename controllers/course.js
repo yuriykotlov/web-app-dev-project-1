@@ -44,10 +44,26 @@ const course = {
 
   deleteMeal(request, response){
     const courseId = request.params.id;
-    
     const mealId = request.params.mealid;
+    
     logger.debug(`Deleting Meal  $(mealId} from Course ${courseId}`);
     mainMenu.deleteMeal(courseId, mealId);
+    
+    response.redirect('/course/' + courseId);
+  },
+
+  updateMeal(request, response){
+    const courseId = request.params.id;
+    const mealId = request.params.mealid;
+
+    logger.debug(`Updating Meal  $(mealId} from Course ${courseId}`);
+    mainMenu.editMeal(courseId, mealId, {
+      id: mealId,
+      name: request.body.name,
+      description: request.body.description,
+      price: parseFloat(request.body.price),
+      rating: parseFloat(request.body.rating)
+    });
     
     response.redirect('/course/' + courseId);
   }

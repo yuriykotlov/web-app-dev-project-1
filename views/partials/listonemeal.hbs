@@ -1,0 +1,25 @@
+<div id="meal{{@index}}" class="column">
+    <div class="column-padding">
+        <h3 id="meal-name{{@index}}">{{name}}</h3>
+        <p id="meal-description{{@index}}">{{description}}</p>
+        <div class="item-footer">
+            <p id="meal-price{{@index}}"><b>{{price}}</b></p>
+            <div class="rating">
+                <span id="meal" class="ui yellow disabled rating" data-icon="star" data-rating="{{rating}}" data-max-rating="5">
+                </span>
+                <span style="color: #fff; font-size: 90%; font-style: italic">
+                    {{getRatingMessage rating}}
+                </span>
+                <p id="meal-rating{{@index}}" class="hide">{{rating}}</p>
+            </div>
+        </div>
+        <div class="meal-controls">
+            <a href="/course/{{courseId}}/deletemeal/{{id}}" title="Delete Meal">
+                <i class="ui white trash icon"></i>
+            </a>
+            <a id="showEdit{{@index}}" title="Edit Meal">
+                <i class="ui white pencil icon"></i>
+            </a>
+        </div>
+    </div>
+</div>

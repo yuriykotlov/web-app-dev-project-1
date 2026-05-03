@@ -41,9 +41,46 @@ body section:first-child {
     font-size: 21px;
 }
 
-.controls{
-    position: absolute;
-    bottom: 7%;
-    left: 5%;
-    width: fit-content;
+.edit-meal-container .field, .edit-meal-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-meal-container .field label{
+    width: 25%;
+}
+
+.edit-meal-container .field input{
+    width: 70%;
+}
+
+.edit-meal-controls{
+    justify-content: center;
+    height: 10%;
+}
+
+.edit-meal-controls button{
+    margin: 0px 10px;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+.edit-meal-controls button:hover{
+    background-color: #b1b1b1;
+}
+
+.hide{
+  display: none !important;
+}
+
+#meal-price::before{
+    content: "€";
+    font-weight: bold;
 }

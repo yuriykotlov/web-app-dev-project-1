@@ -6,15 +6,17 @@
       "name": "Starters",
       "meals": [
         {
+          "id": "id1",
           "name": "Breakfast sandwich",
           "description": "Two breakfast sandwiches with tomatoes, mozarella, lettuce, and cured meats with scrambled eggs.",
-          "price": "€16.75",
+          "price": 16.75,
           "rating": 5
         },
         {
+          "id": "id2",
           "name": "Chicken Kyiv",
           "description": "Chicken breast in a crumb coating, with a pocket of melted butter and herbs inside with a side of salad.",
-          "price": "€16.50",
+          "price": "16.50",
           "rating": 4.75
         }
       ]
@@ -25,15 +27,17 @@
       "name": "Main Courses",
       "meals": [
         {
+          "id": "id3",
           "name": "Filet Mignon",
           "description": "A very tender meat infused with garlic, rosemary, and topped with butter to enhance its flavour.",
-          "price": "€34.99",
+          "price": "34.99",
           "rating": 5
         },
         {
+          "id": "id4",
           "name": "Fish and Chips",
           "description": "Battered haddock with crispy chips, salad, and our signature garlic sauce.",
-          "price": "€22.00",
+          "price": "22.00",
           "rating": 5
         }
       ]
@@ -44,12 +48,19 @@
       "name": "Desserts",
       "meals": [
         {
+          "id": "id5",
           "name": "Cheesecake",
           "description": "A classic cheesecake made of quality ingredients.",
-          "price": "€5.25",
+          "price": "5.25",
           "rating": 4.5
         }
       ]
+    },
+    {
+      "id": "a571c504-74ee-40b2-a1c4-7bfd27d7d21e",
+      "userid": "test_id1",
+      "name": "a",
+      "meals": []
     }
   ]
 }

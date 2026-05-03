@@ -1,0 +1,28 @@
+{{#if meals}}
+  <div class="menu-items-container ui center three column grid">
+    {{#each meals}}
+      {{> listonemeal courseId=../id}}
+      {{> editmeal courseId=../id}}
+
+      <script>
+        console.log("hi");
+        document.getElementById("showEdit{{@index}}").addEventListener("click", () => {
+
+          document.getElementById("edit-name{{@index}}").value = document.getElementById("meal-name{{@index}}").innerHTML
+          document.getElementById("edit-description{{@index}}").value = document.getElementById("meal-description{{@index}}").innerHTML
+          document.getElementById("edit-price{{@index}}").value = document.getElementById("meal-price{{@index}}").textContent
+          document.getElementById("edit-rating{{@index}}").value = document.getElementById("meal-rating{{@index}}").innerHTML
+
+          document.getElementById("meal{{@index}}").classList.add("hide");
+          document.getElementById("edit{{@index}}").classList.remove("hide");
+        })
+        document.getElementById("hideEdit{{@index}}").addEventListener("click", () => {
+          document.getElementById("meal{{@index}}").classList.remove("hide");
+          document.getElementById("edit{{@index}}").classList.add("hide");
+        })
+      </script>
+    {{/each}}
+  </div>
+{{else}}
+  <h3>No meals; try to add one below.</h3>
+{{/if}}

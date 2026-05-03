@@ -54,6 +54,7 @@ const menu = {
     const courseId = request.params.id;
     const newCourse = {
       id: uuidv4(),
+      userid: loggedInUser.id,
       name: request.body.name,
       meals: []
     };

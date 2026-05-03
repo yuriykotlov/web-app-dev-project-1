@@ -1,0 +1,28 @@
+<form id="edit{{@index}}" class="edit-meal-container column hide" method="POST" action="/course/{{courseId}}/updatemeal/{{id}}">
+    <div class="column-padding">
+        <div class="field">
+            <label>Name</label>
+            <input id="edit-name{{@index}}" type="text" name="name" title="Enter a name for this meal" required>
+        </div>
+        <div class="field">
+            <label>Description</label>
+            <input id="edit-description{{@index}}" type="text" name="description" title="Enter a description for this meal" required>
+        </div>
+        <div class="field">
+            <label>Price €</label>
+            <input id="edit-price{{@index}}" type="number" step="0.01" min="0" max="999.99" name="price" title="Enter a price in Euros" required>
+        </div>
+        <div class="field">
+            <label>Rating ⭐</label>
+            <input id="edit-rating{{@index}}" type="number" step="0.25" min="0" max="5" name="rating"  title="Enter a rating" required>
+        </div>
+        <div class="edit-meal-controls">
+            <button type="submit" class="editSubmit" title="Save changes">
+                <i class="ui pencil icon"></i>
+            </button>
+            <button type="reset" id="hideEdit{{@index}}" class="editSubmit" title="Exit without saving changes">
+                <i class="ui undo icon"></i>
+            </button>
+        </div>
+    </div>
+</form>
