@@ -1,17 +1,24 @@
 'use strict';
 
 import logger from "../utils/logger.js";
+import accounts from './accounts.js';
 
 const start = {
   createView(request, response) {
-    logger.info("Start page loading!");
+    const loggedInUser = accounts.getCurrentUser(request);
 
-    // info is not needed for start, just the title and to render its page
-    const viewData = {
-      title: "Restaurant de Ford"
-    };
-    
-    response.render('start', viewData);   
+    if(loggedInUser){
+      logger.info("Start page loading!");
+
+      // info is not needed for start, just the title and to render its page
+      const viewData = {
+        title: "Restaurant de Ford",
+        formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
+        //picture: loggedInUser.picture
+      };
+      
+      response.render('start', viewData);
+    } else response.redirect('/');
   },
 };
 

@@ -19,7 +19,6 @@ nav{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
   margin-top: 30px;
 }
 
@@ -85,4 +84,27 @@ section > section, .welcome-menu, .log-in, .sign-up{
 
 .log-in::after, .sign-up::after{
   display: none;
+}
+
+.account-display{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.account-name-formatted{
+  padding: 0px;
+  margin: 0px;
+}
+
+.account-name-formatted, #logout{
+  background-color: #500000;
+  padding: 10px;
+  font-size: 21px;
+  color: #fff;
+  border-radius: 7px;
 }

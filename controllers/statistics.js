@@ -6,7 +6,7 @@ import accounts from './accounts.js';
 const stats = {
   createView(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-
+    
     if(loggedInUser){
       logger.info("Statistics page loading!");
       // app statistics calculations
@@ -33,13 +33,13 @@ const stats = {
       };
 
       const viewData = {
-        title: "Playlist App Statistics",
+        title: "Restaurant de Ford | Statistics",
         statistics: statistics,
-        formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.locationName,
+        formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
         //picture: loggedInUser.picture
       };
     
-      response.render("stats", viewData);
+      response.render("statistics", viewData);
     }
     else response.redirect('/');
   },

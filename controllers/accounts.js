@@ -6,6 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 //create an accounts object
 const accounts = {
+  getUserCount(request, response){
+    return userStore.getAllUsers().length;
+  },
 
   //index function to render index page
   index(request, response) {

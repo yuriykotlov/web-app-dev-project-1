@@ -1,4 +1,4 @@
-{{> menu id="statistics"}}
+{{> header id="statistics"}}
 
 <section class="ui center aligned middle aligned segment">
 
@@ -10,7 +10,7 @@
   <p>
     The playlist app now contains:
   </p>
-  {{#with stats}}
+  {{#with statistics}}
   <div class="ui center aligned grid">
 
     <div class="ui sixteen wide column">
@@ -30,7 +30,7 @@
             <i class="microphone icon"></i>
           </div>
           <div class="label">
-            {{displayNumPlaylists}} playlists
+            {{displayNumberOfCourses}} courses
           </div>
         </div>
 
@@ -39,7 +39,7 @@
             <i class="music icon"></i>
           </div>
           <div class="label">
-            {{displayNumSongs}} songs
+            {{displayNumberOfMeals}} meals
           </div>
         </div>
 
@@ -48,46 +48,20 @@
             <i class="balance scale icon"></i>
           </div>
           <div class="label">
-            Average songs per <br> playlist: {{displayAverage}}
+            Average meals per <br> course: {{displayAverageMealsPerCourse}}
           </div>
         </div>
       </div>
     </div>
 
     <div class="ui sixteen wide column">
-      <div class="ui centered three statistics">
-
-        <div class="ui yellow statistic">
-          <div class="value">
-            <i class="star icon"></i>
-          </div>
-          <div class="label">
-            Highest Rated playlists: {{highest}} stars
-            <table>
-              {{#each displayFav}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
-          </div>
-        </div>
-
-        <div class="ui green statistic">
-          <div class="value">
-            <i class="dot circle outline icon"></i>
-          </div>
-          <div class="label">
-            Average Rating: {{displayAvgRating}}
-          </div>
-        </div>
-
+      <div class="ui centered one statistics">
         <div class="ui purple statistic">
           <div class="value">
             <i class="plus icon"></i>
           </div>
           <div class="label">
-            Largest Playlist: {{largest}}
+            Largest Course: {{largestCourse}}
           </div>
         </div>
       </div>

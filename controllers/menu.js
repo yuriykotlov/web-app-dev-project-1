@@ -3,44 +3,51 @@
 import logger from "../utils/logger.js";
 import mainMenu from "../models/menu.js";
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const menu = {
   createView(request, response) {
-    logger.info("Menu page loading!");
+    const loggedInUser = accounts.getCurrentUser(request);
 
-    const searchTerm = request.query.searchTerm || "";
+    if(loggedInUser){
+      logger.info("Menu page loading!");
 
-    const courses = searchTerm ? mainMenu.searchForCourse(searchTerm) : mainMenu.getAppInfo();
+      const searchTerm = request.query.searchTerm || "";
 
-    const sortField = request.query.sort;
-    const order = request.query.order === "desc" ? -1 : 1;
+      const courses = searchTerm ? mainMenu.searchForCourse(searchTerm) : mainMenu.getUserCourses(loggedInUser.id);
 
-    let sorted = courses;
+      const sortField = request.query.sort;
+      const order = request.query.order === "desc" ? -1 : 1;
 
-    if (sortField){
-      sorted = courses.slice().sort((a, b) => {
-        if (sortField === "name") {
-          return a.name.localeCompare(b.title) * order;
-        }
-        if (sortField === "name") {
-            return (a.meals.length - b.meals.length) * order;
-        }
-        return 0;
-      });
-    }
-    
-    // get all main menu info
-    const viewData = {
-      title: "Restaurant de Ford | Menu",
-      course: sortField ? sorted : courses,
-      search: searchTerm,
-      nameSelected: request.query.sort === "name",
-      numberOfMeals: request.query.sort === "numberOfMeals",
-      ascSelected: request.query.order === "asc",
-      descSelected: request.query.order === "desc",
-    };
+      let sorted = courses;
 
-    response.render('menu', viewData);   
+      if (sortField){
+        sorted = courses.slice().sort((a, b) => {
+          if (sortField === "name") {
+            return a.name.localeCompare(b.title) * order;
+          }
+          if (sortField === "name") {
+              return (a.meals.length - b.meals.length) * order;
+          }
+          return 0;
+        });
+      }
+      
+      // get all main menu info
+      const viewData = {
+        title: "Restaurant de Ford | Menu",
+        course: sortField ? sorted : courses,
+        search: searchTerm,
+        nameSelected: request.query.sort === "name",
+        numberOfMeals: request.query.sort === "numberOfMeals",
+        ascSelected: request.query.order === "asc",
+        descSelected: request.query.order === "desc",
+        formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
+        //picture: loggedInUser.picture
+      };
+
+      response.render('menu', viewData);
+    } else response.redirect('/');
   },
 
   addCourse(request, response){

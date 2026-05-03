@@ -3,21 +3,28 @@
 import logger from "../utils/logger.js";
 import mainMenu from "../models/menu.js";
 import { parse, v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const course = {
   createView(request, response) {
-    logger.info("Course page loading!");
+    const loggedInUser = accounts.getCurrentUser(request);
 
-    // course meal id to get
-    const courseId = request.params.id;
-    
-    // get specific course meals from id
-    const viewData = {
-      title: "Restaurant de Ford | Course",
-      thisCourse: mainMenu.getCourse(courseId)
-    };
-    
-    response.render('course', viewData);   
+    if(loggedInUser){
+      logger.info("Course page loading!");
+
+      // course meal id to get
+      const courseId = request.params.id;
+      
+      // get specific course meals from id
+      const viewData = {
+        title: "Restaurant de Ford | Course",
+        thisCourse: mainMenu.getCourse(courseId),
+        formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
+        //picture: loggedInUser.picture
+      };
+      
+      response.render('course', viewData);
+    } else response.redirect('/');
   },
 
   addMeal(request, response){

@@ -1,14 +1,14 @@
 {
     "users": [
         {
-            "name": "Restaurant 1",
+            "restaurantName": "Restaurant 1",
             "location": "Waterford",
             "email": "restaurant@waterford.com",
             "password": "secret",
             "id": "test_id1"
         },
         {
-            "name": "Restaurant 2",
+            "restaurantName": "Restaurant 2",
             "location": "Dublin",
             "email": "restaurant@dublin.com",
             "password": "secret",
