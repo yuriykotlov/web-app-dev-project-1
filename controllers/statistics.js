@@ -10,7 +10,7 @@ const stats = {
     if(loggedInUser){
       logger.info("Statistics page loading!");
       // app statistics calculations
-      const courses = mainMenu.getUserCourses(loggedInUser.id);
+      const courses = mainMenu.getAppInfo();
 
       let numberOfCourses = courses.length;
       let numberOfMeals = courses.reduce((total, course) => total + course.meals.length, 0);
@@ -36,7 +36,7 @@ const stats = {
         title: "Restaurant de Ford | Statistics",
         statistics: statistics,
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
     
       response.render("statistics", viewData);

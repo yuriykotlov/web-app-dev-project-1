@@ -1,18 +1,37 @@
 {
-    "users": [
-        {
-            "restaurantName": "Restaurant 1",
-            "location": "Waterford",
-            "email": "restaurant@waterford.com",
-            "password": "secret",
-            "id": "test_id1"
-        },
-        {
-            "restaurantName": "Restaurant 2",
-            "location": "Dublin",
-            "email": "restaurant@dublin.com",
-            "password": "secret",
-            "id": "test_id2"
-        }
-    ]
+  "users": [
+    {
+      "restaurantName": "Restaurant 1",
+      "location": "Waterford",
+      "email": "restaurant@waterford.com",
+      "password": "secret",
+      "id": "test_id1",
+      "picture": {
+        "url": "http://res.cloudinary.com/dz3iidl5y/image/upload/v1777842784/zb4afyqcysdv0ft5brdy.png",
+        "public_id": "zb4afyqcysdv0ft5brdy"
+      }
+    },
+    {
+      "restaurantName": "Restaurant 2",
+      "location": "Dublin",
+      "email": "restaurant@dublin.com",
+      "password": "secret",
+      "id": "test_id2",
+      "picture": {
+        "url": "http://res.cloudinary.com/dz3iidl5y/image/upload/v1777842784/zb4afyqcysdv0ft5brdy.png",
+        "public_id": "zb4afyqcysdv0ft5brdy"
+      }
+    },
+    {
+      "restaurantName": "aa",
+      "location": "a",
+      "email": "a@a.a",
+      "password": "e",
+      "id": "54d05b02-4ed5-4542-b6af-620dc1c268bd",
+      "picture": {
+        "url": "http://res.cloudinary.com/dz3iidl5y/image/upload/v1777842784/zb4afyqcysdv0ft5brdy.png",
+        "public_id": "zb4afyqcysdv0ft5brdy"
+      }
+    }
+  ]
 }

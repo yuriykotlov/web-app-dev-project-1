@@ -16,7 +16,7 @@ const info = {
         title: "Restaurant de Ford | About us",
         staffMembers: staff.getAppInfo(),
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
       
       response.render('staff', viewData);

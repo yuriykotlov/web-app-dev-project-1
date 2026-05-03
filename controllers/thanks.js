@@ -14,7 +14,7 @@ const bookingComplete = {
       const viewData = {
         title: "Restaurant de Ford | Booking complete",
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
       
       response.render('thanks', viewData);

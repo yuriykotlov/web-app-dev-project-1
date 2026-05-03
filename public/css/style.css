@@ -97,6 +97,20 @@ section > section, .welcome-menu, .log-in, .sign-up{
   width: 100%;
 }
 
+.account{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.profile-picture{
+  width: 8%;
+  margin-left: 15px;
+  border-radius: 100%;
+}
+
 .account-name-formatted{
   padding: 0px;
   margin: 0px;

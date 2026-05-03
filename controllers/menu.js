@@ -43,7 +43,7 @@ const menu = {
         ascSelected: request.query.order === "asc",
         descSelected: request.query.order === "desc",
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
 
       response.render('menu', viewData);

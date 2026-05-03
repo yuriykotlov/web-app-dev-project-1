@@ -16,7 +16,7 @@ const gallery = {
         title: "Restaurant de Ford | Gallery",
         info: galleryPictures.getAppInfo(),
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
       
       response.render('gallery', viewData);

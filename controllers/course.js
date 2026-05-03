@@ -20,7 +20,7 @@ const course = {
         title: "Restaurant de Ford | Course",
         thisCourse: mainMenu.getCourse(courseId),
         formattedName: loggedInUser.restaurantName + " @ " + loggedInUser.location,
-        //picture: loggedInUser.picture
+        picture: loggedInUser.picture
       };
       
       response.render('course', viewData);
