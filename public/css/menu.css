@@ -73,6 +73,11 @@
     padding-bottom: 5dvh;
 }
 
+#add-course h2{
+    color: #fff;
+    text-align: center;
+}
+
 #add-course form {
     display: flex;
     flex-direction: row;

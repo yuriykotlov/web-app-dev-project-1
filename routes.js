@@ -21,4 +21,7 @@ router.get('/staff', staff.createView);
 router.get('/gallery', gallery.createView);
 router.get('/thanks', thanks.createView);
 
+router.post('/menu/addcourse', menu.addCourse);
+router.post('/course/:id/addmeal', course.addMeal);
+
 export default router;

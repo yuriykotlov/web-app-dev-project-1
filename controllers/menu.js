@@ -17,17 +17,16 @@ const menu = {
     response.render('menu', viewData);   
   },
 
-  addMeal(request, response){
+  addCourse(request, response){
     const courseId = request.params.id;
-    const newMeal = {
+    const newCourse = {
       id: uuidv4(),
       name: request.body.name,
-      description: request.body.description,
-      price: request.body.price,
-      rating: request.body.rating,
+      meals: []
     };
-    mainMenu.addMeal(courseId, newMeal);
-    response.redirect('/course/' + courseId);
+    mainMenu.addCourse(newCourse);
+    
+    response.redirect('/menu');
   }
 };
 
