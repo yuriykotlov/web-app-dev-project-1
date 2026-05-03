@@ -69,6 +69,18 @@ const menu = {
     mainMenu.deleteCourse(courseId)
     
     response.redirect('/menu');
+  },
+
+  updateCourse(request, response){
+    const courseId = request.params.id;
+    logger.debug(`Updating Course ${courseId}`);
+    
+    mainMenu.editCourse(courseId, {
+      id: courseId,
+      name: request.body.name
+    });
+    
+    response.redirect('/menu');
   }
 };
 

@@ -29,6 +29,10 @@ const menu = {
     this.mainMenu.removeCollection(this.collection, course)
   },
 
+  editCourse(courseId, updatedCourse){
+    this.mainMenu.editCollection(this.collection, courseId, updatedCourse);
+  },
+
   searchForCourse(search){
     return this.mainMenu.findBy(
       this.collection,

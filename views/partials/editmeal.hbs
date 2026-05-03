@@ -1,4 +1,4 @@
-<form id="edit{{@index}}" class="edit-meal-container column hide" method="POST" action="/course/{{courseId}}/updatemeal/{{id}}">
+<form id="edit{{@index}}" class="edit-container column hide" method="POST" action="/course/{{courseId}}/updatemeal/{{id}}">
     <div class="column-padding">
         <div class="field">
             <label>Name</label>
@@ -16,7 +16,7 @@
             <label>Rating ⭐</label>
             <input id="edit-rating{{@index}}" type="number" step="0.25" min="0" max="5" name="rating"  title="Enter a rating" required>
         </div>
-        <div class="edit-meal-controls">
+        <div class="edit-controls">
             <button type="submit" class="editSubmit" title="Save changes">
                 <i class="ui pencil icon"></i>
             </button>

@@ -41,7 +41,7 @@ body section:first-child {
     font-size: 21px;
 }
 
-.edit-meal-container .field, .edit-meal-controls{
+.edit-container .field, .edit-controls{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,20 +49,20 @@ body section:first-child {
     width: 100%;
 }
 
-.edit-meal-container .field label{
+.edit-container .field label{
     width: 25%;
 }
 
-.edit-meal-container .field input{
+.edit-container .field input{
     width: 70%;
 }
 
-.edit-meal-controls{
+.edit-controls{
     justify-content: center;
     height: 10%;
 }
 
-.edit-meal-controls button{
+.edit-controls button{
     margin: 0px 10px;
     height: 100%;
     background-color: #fff;
@@ -72,12 +72,8 @@ body section:first-child {
     padding-left: 10px;
 }
 
-.edit-meal-controls button:hover{
+.edit-controls button:hover{
     background-color: #b1b1b1;
-}
-
-.hide{
-  display: none !important;
 }
 
 #meal-price::before{

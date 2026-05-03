@@ -10,6 +10,7 @@ html {
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   background-color: rgb(125, 0, 0);
+  height: 115%;
 }
 
 /* header */

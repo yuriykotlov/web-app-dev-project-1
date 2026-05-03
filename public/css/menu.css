@@ -113,6 +113,10 @@
     border-radius: 15px !important;
 }
 
+#add-course form::after{
+    display: none !important;
+}
+
 #add-course form button{
     font-size: 21px;
     width: 45%;
@@ -137,4 +141,8 @@
 #filter .field{
     padding: 0px;
     margin: 0px;
+}
+
+.hide{
+  display: none !important;
 }
