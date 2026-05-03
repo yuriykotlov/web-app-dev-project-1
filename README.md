@@ -10,12 +10,8 @@ Basic info:
 - There is a staff page with the (fictional) staff and the (fictional) location of the restaurant
 - There is a gallery page with pictures depicting the (fictional) restaurant.
 
-References:
+Sources:
 
-  > Assignment 1:
-  - W3Schools | Small help with basic JS concepts: https://www.w3schools.com/js/default.asp
-  - Stackoverflow Thread | Code with transferring user to a new page: https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
-  - Sitepoint Thread | Code with getting an element on another page: https://www.sitepoint.com/community/t/document-getelementbyid-on-different-html-page/355998
-
-  > Assignment 2:
-  - W3Schools | Grid for displaying courses: https://www.w3schools.com/css/css_grid.asp
+- W3Schools | Small help with basic JS concepts: https://www.w3schools.com/js/default.asp
+- Stackoverflow Thread | Code with transferring user to a new page: https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
+- Sitepoint Thread | Code with getting an element on another page: https://www.sitepoint.com/community/t/document-getelementbyid-on-different-html-page/355998
