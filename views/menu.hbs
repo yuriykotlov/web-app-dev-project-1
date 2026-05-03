@@ -9,7 +9,7 @@
   <h1>Our Menu</h1>
   {{#each course}}
     <div class="menu-items-container ui center aligned segment">
-      <h2>{{name}}</h2>
+      <h2><i>{{uppercase name}}</i></h2>
       {{#if meals}}
         <p>Number of meals: {{meals.length}}</p>
       {{else}}

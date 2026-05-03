@@ -28,3 +28,7 @@ function finishBooking(date, time){
         thanks.document.getElementById("time").innerHTML = time
     })
 }
+
+$('.ui.rating')
+  .rating()
+;

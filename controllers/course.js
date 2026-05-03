@@ -26,7 +26,7 @@ const course = {
       name: request.body.name,
       description: request.body.description,
       price: parseFloat(request.body.price),
-      rating: parseInt(request.body.rating),
+      rating: parseFloat(request.body.rating),
     };
     mainMenu.addMeal(courseId, newMeal);
     

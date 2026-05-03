@@ -12,7 +12,25 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const handlebars = create({extname: '.hbs'});
+const handlebars = create({
+  extname: '.hbs', 
+    helpers: {
+        uppercase: (inputString) => {
+            return inputString.toUpperCase();
+        },
+        getRatingMessage: (rating) => {
+            if(rating == 5){
+                return "- Most popular choice!";
+            } else if(rating < 5 && rating >= 4){
+                return "- A popular choice!";
+            } else if(rating < 4 && rating >= 3){
+                return "- A great option!";
+            } else{
+                return "";
+            }
+        },
+    },
+});
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
 

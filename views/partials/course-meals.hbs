@@ -17,11 +17,22 @@
           <p>{{description}}</p>
           <div class="item-footer">
             <p><b>{{price}}</b></p>
-            <p><b>⭐{{rating}}</b></p>
+            {{!-- <p><b>⭐{{rating}}</b></p> --}}
+            <div class="rating">
+              <span 
+                class="ui yellow disabled rating" 
+                data-icon="star" 
+                data-rating="{{rating}}" 
+                data-max-rating="5">
+              </span>
+              <span style="color: #fff; font-size: 90%; font-style: italic">
+                {{getRatingMessage rating}}
+              </span>
+            </div>
           </div>
           <div class="controls">
             <a href="/course/{{../id}}/deletemeal/{{id}}" title="Delete Meal">
-                <i class="ui white trash icon"></i>
+              <i class="ui white trash icon"></i>
             </a>
           </div>
         </div>
