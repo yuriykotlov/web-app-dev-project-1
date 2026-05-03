@@ -15,7 +15,14 @@
       {{else}}
         <p>No meals in this course yet!</p>
       {{/if}}
-      <a href="/course/{{id}}"><i class="icon hamburger"></i> See meals</a>
+      
+      <a href="/course/{{id}}"><i class="icon hamburger"></i>See meals</a>
+      
+      <div class="controls">
+        <a href="/menu/deletecourse/{{id}}" title="Delete Course">
+            <i class="ui white trash icon"></i>
+        </a>
+      </div>
     </div>
   {{/each}}
 </section>

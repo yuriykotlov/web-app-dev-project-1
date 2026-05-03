@@ -20,8 +20,17 @@ const menu = {
     this.mainMenu.addCollection(this.collection, course);
   },
 
+  deleteCourse(courseId){
+    const course = this.getCourse(courseId);
+    this.mainMenu.removeCollection(this.collection, course)
+  },
+
   addMeal(id, meal) {
     this.mainMenu.addItem(this.collection, id, this.array, meal);
+  },
+
+  deleteMeal(courseId, mealId){
+    this.mainMenu.removeItem(this.collection, courseId, this.array, mealId)
   }
 };
 

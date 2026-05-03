@@ -40,3 +40,10 @@ body section:first-child {
 #add-meal form button{
     font-size: 21px;
 }
+
+.controls{
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    width: fit-content;
+}

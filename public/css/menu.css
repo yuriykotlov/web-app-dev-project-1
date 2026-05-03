@@ -70,6 +70,7 @@
 }
 
 #menu-container{
+    position: relative;
     padding-bottom: 5dvh;
 }
 
@@ -97,4 +98,11 @@
 
 #add-course form div{
     width: 45%;
+}
+
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 11%;
+    width: fit-content;
 }

@@ -31,6 +31,16 @@ const course = {
     mainMenu.addMeal(courseId, newMeal);
     
     response.redirect('/course/' + courseId);
+  },
+
+  deleteMeal(request, response){
+    const courseId = request.params.id;
+    
+    const mealId = request.params.mealid;
+    logger.debug(`Deleting Meal  $(mealId} from Course ${courseId}`);
+    mainMenu.deleteMeal(courseId, mealId);
+    
+    response.redirect('/course/' + courseId);
   }
 };
 

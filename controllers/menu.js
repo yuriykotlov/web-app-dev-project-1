@@ -27,6 +27,14 @@ const menu = {
     mainMenu.addCourse(newCourse);
     
     response.redirect('/menu');
+  },
+
+  deleteCourse(request, response){
+    const courseId = request.params.id;
+    logger.debug(`Deleting Course ${courseId}`);
+    mainMenu.deleteCourse(courseId)
+    
+    response.redirect('/menu');
   }
 };
 
