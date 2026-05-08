@@ -14,7 +14,7 @@ const menu = {
 
       const searchTerm = request.query.searchTerm || "";
 
-      const courses = searchTerm ? mainMenu.searchForCourse(searchTerm) : mainMenu.getUserCourses(loggedInUser.id);
+      const courses = searchTerm ? mainMenu.searchForCourse(searchTerm, loggedInUser.id) : mainMenu.getUserCourses(loggedInUser.id);
 
       const sortField = request.query.sort;
       const order = request.query.order === "desc" ? -1 : 1;
@@ -26,7 +26,7 @@ const menu = {
           if (sortField === "name") {
             return a.name.localeCompare(b.title) * order;
           }
-          if (sortField === "name") {
+          if (sortField === "numberOfMeals") {
               return (a.meals.length - b.meals.length) * order;
           }
           return 0;

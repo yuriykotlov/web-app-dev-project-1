@@ -51,10 +51,10 @@ const menu = {
     this.mainMenu.editCollection(this.collection, courseId, updatedCourse);
   },
 
-  searchForCourse(search){
+  searchForCourse(search, userId){
     return this.mainMenu.findBy(
       this.collection,
-      (course => course.name.toLowerCase().includes(search.toLowerCase()))
+      (course => course.name.toLowerCase().includes(search.toLowerCase()) && course.userid == userId)
     )
   },
 
